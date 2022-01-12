@@ -7,7 +7,6 @@ In this post, we'll get set up with [Jekyll](https://jekyllrb.com/). Jekyll is a
 
 Editing my post over here!!!!
 
-...
 ### small title
 
 1. **bold**
