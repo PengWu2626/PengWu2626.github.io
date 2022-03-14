@@ -73,7 +73,7 @@ For example, dog breed prediction will be hidden when the model detects the uplo
 2. I learned enough fundamental skills to build a simple interactive webapp using Flask. 
 
 
-3. I learned how to use the TensorFlow package inside Flask locally on M1 Mac using Miniforge Environment.
+3. I learned how to use the TensorFlow package inside Flask locally on M1 Mac using Miniforge Environment. The instruction is inside the [README.md](https://github.com/PengWu2626/PIC16B_GroupProject/blob/main/README.md) file.
 
 ## How will your experience completing this project will help you in your future studies or career? 
 
