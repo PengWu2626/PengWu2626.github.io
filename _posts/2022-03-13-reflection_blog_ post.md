@@ -5,11 +5,13 @@ title: Reflection Blog Post
 
 Our group (**Peng** (myself), **Jiamu**, **Weixin**, and **Miao**) made the web app called **Dog Facial Recognition**. Our web app used three machine learning models. First, our web app will detect if the image contains any human face. Then, it will detect the uploaded image is a dog or cat. Finally, the web app will show the top three most likely dog breeds.
 
-- [Here is the link to the GitHub repository containing the code of this project.](https://github.com/PengWu2626/PIC16B_GroupProject)
+- Here is the [link](https://github.com/PengWu2626/PIC16B_GroupProject) to the GitHub repository containing the code of this project.
 
-- [Here is the Heroku link for our web app.](https://pic16b-dog-facial-recognition.herokuapp.com/) (Long Boot Time)
+- Here is the [link](https://dogfr.nicholastec.com) for our webapp running on the AWS platform. Thanks to my group member Miao, she developed this. (Faster Boot Time)
 
-- [Here is the Heroku link for the short version of our web app](https://pic16b-dogfr-short.herokuapp.com), which removed face detecting and the drop zone.
+- Here is the [Heroku link](https://pic16b-dog-facial-recognition.herokuapp.com/) for our webapp. (Long Boot Time)
+
+- Here is the [Heroku link](https://pic16b-dogfr-short.herokuapp.com) for the short version of our webapp, which removed face detecting and the drop zone.
 
 ## Overall, what did you achieve in your project? 
 
