@@ -9,6 +9,8 @@ Our group (**Peng** (myself), **Jiamu**, **Weixin**, and **Miao**) made the web 
 
 - [Here is the Heroku link for our web app.](https://pic16b-dog-facial-recognition.herokuapp.com/) (Long Boot Time)
 
+- [Here is the Heroku link for the short version of our web app](https://pic16b-dogfr-short.herokuapp.com), which removed face detecting and the drop zone.
+
 ## Overall, what did you achieve in your project? 
 
 I mainly designed this project, assigned minimal tasks to each group member that they must do, and helped our group members with any questions. For instance,  I asked Jiamu to write a face detection model to determine if the user uploaded image contains any human face. Also, I assigned each of Weixin and Miao to build two different models using transfer learning for dog breed classification.
