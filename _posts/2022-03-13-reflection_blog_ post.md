@@ -7,7 +7,7 @@ Our group (**Peng** (myself), **Jiamu**, **Weixin**, and **Miao**) made the web 
 
 - Here is the [link](https://github.com/PengWu2626/PIC16B_GroupProject) to the GitHub repository containing the code of this project.
 
-- Here is the [link](https://dogfr.nicholastec.com) for our webapp running on the AWS platform. Thanks to my group member Jiamu, she developed this. (Recommended with Much Faster Boot Time)
+- Here is the [link](https://dogfr.nicholastec.com) for our webapp running on the AWS platform. Thanks to my group member Jiamu, she developed this. (**Recommended** with Much Faster Boot Time)
 
 - Here is the [Heroku link](https://pic16b-dog-facial-recognition.herokuapp.com/) for our webapp. (Long Boot Time)
 
