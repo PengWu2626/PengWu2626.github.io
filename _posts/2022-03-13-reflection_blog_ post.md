@@ -3,6 +3,11 @@ layout: post
 title: Reflection Blog Post
 ---
 
+<center>
+  <img src="/images/meme1.png" alt="Dog Image"> 
+</center>
+<br>
+
 Our group (**Peng** (myself), **Jiamu**, **Weixin**, and **Miao**) made the web app called **Dog Facial Recognition**. Our web app used three machine learning models. First, our web app will detect if the image contains any human face. Then, it will detect the uploaded image is a dog or cat. Finally, the web app will show the top three most likely dog breeds.
 
 - Here is the [link](https://github.com/PengWu2626/PIC16B_GroupProject) to the GitHub repository containing the code of this project.
