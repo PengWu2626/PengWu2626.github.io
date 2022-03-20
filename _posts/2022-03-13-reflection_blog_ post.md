@@ -3,10 +3,76 @@ layout: post
 title: Reflection Blog Post
 ---
 
-<center>
-  <img src="/images/meme1.png" alt="Dog Image"> 
-</center>
-<br>
+<div>
+<style scoped>
+.container1{
+  background: radial-gradient(#1b2735 0%, #090a0f 100%);
+  border-radius: 20px;
+}
+.glassBox {
+  width: 100%;
+  height: 400px;
+  max-width: 300px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-right-color: rgba(255, 255, 255, 0.1);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  top: 25px;
+}
+.glassBox, .glassBox * {
+  box-sizing: border-box;
+  transition: 400ms;
+}
+.glassBox__imgBox img {
+  display: block;
+  width: 280px;
+  height: 200px;
+  opacity: 95%;
+}
+.glassBox__title {
+  text-align: center;
+  margin-top: 15px;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Lato";
+  opacity: 90%;
+}
+.glassBox:hover .glassBox__imgBox {
+  transform: translateY(-50px);
+}
+.glassBox:hover .glassBox__imgBox img {
+  transform: translate(-20px, -40px) rotate(-15deg) scale(1.4);
+}
+</style>
+
+<div id='stars'></div>
+<div id='stars2'></div>
+<div id='stars3'></div>
+
+<div class="container1">
+<div class="glassBox">
+  <div class="glassBox__imgBox">
+    <img src="/images/meme1.png" alt="Dog Image"> 
+    <h3 class="glassBox__title">Voted<br> Python is the best!</h3>
+  </div>
+  </div>
+<br><br>
+</div>
+</div>
+
 
 Our group (**Peng** (myself), **Jiamu**, **Weixin**, and **Miao**) made the web app called **Dog Facial Recognition**. Our web app used three machine learning models. First, our web app will detect if the image contains any human face. Then, it will detect the uploaded image is a dog or cat. Finally, the web app will show the top three most likely dog breeds.
 
@@ -87,3 +153,5 @@ For example, dog breed prediction will be hidden when the model detects the uplo
 
 The experience of building a project as a team is important for me.
 Furthermore, I want to become a software engineer after I graduate; therefore, this hands-on project can better prepare me to fit in my future job environment. Before this class, I mainly practice many codes as a back-end developer. Therefore, I am grateful that this project let me practice many front-end skills, which I have always wanted to study.
+
+
