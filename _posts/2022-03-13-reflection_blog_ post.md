@@ -35,13 +35,13 @@ title: Reflection Blog Post
   box-sizing: border-box;
   transition: 400ms;
 }
-.glassBox__imgBox img {
+.glassBoximgBox img {
   display: block;
   width: 280px;
   height: 200px;
   opacity: 95%;
 }
-.glassBox__title {
+.glassBoxtitle {
   text-align: center;
   margin-top: 15px;
   color: white;
@@ -50,10 +50,10 @@ title: Reflection Blog Post
   font-family: "Lato";
   opacity: 90%;
 }
-.glassBox:hover .glassBox__imgBox {
+.glassBox:hover .glassBoximgBox {
   transform: translateY(-50px);
 }
-.glassBox:hover .glassBox__imgBox img {
+.glassBox:hover .glassBoximgBox img {
   transform: translate(-20px, -40px) rotate(-15deg) scale(1.4);
 }
 </style>
@@ -64,9 +64,9 @@ title: Reflection Blog Post
 
 <div class="container1">
 <div class="glassBox">
-  <div class="glassBox__imgBox">
+  <div class="glassBoximgBox">
     <img src="/images/meme1.png" alt="Dog Image"> 
-    <h3 class="glassBox__title">Voted<br> Python is the best!</h3>
+    <h3 class="glassBoxtitle">Voted<br> Python is the best!</h3>
   </div>
   </div>
 <br><br>
