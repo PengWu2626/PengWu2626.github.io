@@ -2,7 +2,7 @@
 layout: post
 title: Reflection Blog Post
 ---
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <div>
 <style scoped>
 .container1{
@@ -112,6 +112,56 @@ title: Reflection Blog Post
     transform: translateY(-2000px);
   }
 }
+.glasscontainer{
+  position: relative;
+  display: inline-flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.glasscontainer .card{
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+  box-shadow: 20px 20px 50px rgb(0, 0, 0, 0.5);
+  border-radius: 5px;
+  background: rgb(255, 255, 255, 0.1);
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+}
+.glasscontainer .card .content{
+  padding: 10px;
+  transform: translateY(50px);
+  opacity: 85%;
+  transition: 0.5s;
+  text-align: center;
+}
+.glasscontainer .card:hover .content{
+  transform: translateY(0px);
+  opacity: 100%;
+}
+.glasscontainer .card .content h2{
+  position: fixed;
+  top: -110px;
+  right: 20px;
+  font-size: 4em;
+  color: rgba(255, 255, 255, 1.9);
+  pointer-events: none;
+}
+.glasscontainer .card .content p{
+  text-align: center;
+  font-size: 0.9em;
+  color: black;
+  font-weight: 400;
+  opacity: 100%;
+}
+.glasscontainer .card .content li{
+  text-align: left;
+}
 </style>
 
 <div id='stars'></div>
@@ -132,13 +182,64 @@ title: Reflection Blog Post
 
 Our group (**Peng** (myself), **Jiamu**, **Weixin**, and **Miao**) made the web app called **Dog Facial Recognition**. Our web app used three machine learning models. First, our web app will detect if the image contains any human face. Then, it will detect the uploaded image is a dog or cat. Finally, the web app will show the top three most likely dog breeds.
 
-- Here is the [link](https://github.com/PengWu2626/PIC16B_GroupProject) to the GitHub repository containing the code of this project.
+<!-- - Here is the [link](https://github.com/PengWu2626/PIC16B_GroupProject) to the GitHub repository containing the code of this project.
 
 - Here is the [link](https://dogfr.nicholastec.com) for our webapp running on the AWS platform. Thanks to my group member Jiamu, she developed this. (**Recommended** with Much Faster Boot Time)
 
 - Here is the [Heroku link](https://pic16b-dog-facial-recognition.herokuapp.com/) for our webapp. (Long Boot Time)
 
-- Here is the [Heroku link](https://pic16b-dogfr-short.herokuapp.com) for the short version of our webapp, which removed face detecting and the drop zone. (Long Boot Time)
+- Here is the [Heroku link](https://pic16b-dogfr-short.herokuapp.com) for the short version of our webapp, which removed face detecting and the drop zone. (Long Boot Time) -->
+
+<table class="myglasstable">
+<tbody>
+  <tr>
+    <td>
+      <div class="glasscontainer">
+      <div class="card">
+      <div class="content">
+      <h2 style="color:rgb(228, 228, 240); font-size: 20px; top: -50px;">GitHub</h2>
+      <i class="fa fa-github fa-5x fa-spin"></i>
+      <br>
+      <br>
+      <p>Here is the <a href ='https://github.com/PengWu2626/PIC16B_GroupProject'>link</a> to the GitHub repository containing the code of this project.</p>
+      </div>
+      </div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div class="glasscontainer">
+      <div class="card">
+      <div class="content">
+      <h2 style="color:rgb(228, 228, 240); font-size: 20px; top: -50px;">AWS Link</h2>
+      <p>
+      <ul>
+      <li><strong>Recommended:</strong> Here is the <a href ='https://dogfr.nicholastec.com'>link</a> for our webapp running on the AWS platform. Thanks to my group member Jiamu, she developed this. (Much Faster Boot Time)</li>
+      </ul>
+      </p>
+      </div>
+      </div>
+      </div>
+    </td>
+     <td>
+      <div class="glasscontainer">
+      <div class="card">
+      <div class="content">
+      <h2 style="color:rgb(228, 228, 240); font-size: 20px; top: -50px;">Heroku Link</h2>
+      <p>
+      <ul>
+      <li>Here is the <a href ='https://pic16b-dog-facial-recognition.herokuapp.com/'>link</a> for our webapp. (Long Boot Time)</li>
+      <li>Here is the <a href ='https://pic16b-dogfr-short.herokuapp.com'>link</a> for the short version of our webapp, which removed face detecting and the drop zone. (Long Boot Time)</li>
+      </ul>
+      </p>
+      </div>
+      </div>
+      </div>
+    </td>
+  </tr>
+</tbody>
+</table>
 
 ## Overall, what did you achieve in your project? 
 
@@ -161,8 +262,6 @@ Extra Features:
 
 - I wrote the [Find Your Best Dog page](https://github.com/PengWu2626/PIC16B_GroupProject/blob/main/templates/findyourdog.html) and all relative codes to find matched dog breeds from the user-selected numbers.
 <img src="/images/reflection_blog_ post_images/Find_Your_Best_Dog.png" alt="Find Your Best Dog Image"> 
-
-
 
 
 ## What are two aspects of your project that you are especially proud of? 
@@ -211,3 +310,12 @@ The experience of building a project as a team is important for me.
 Furthermore, I want to become a software engineer after I graduate; therefore, this hands-on project can better prepare me to fit in my future job environment. Before this class, I mainly practice many codes as a back-end developer. Therefore, I am grateful that this project let me practice many front-end skills, which I have always wanted to study.
 
 
+<script type="text/javascript" src="/static/vanilla-tilt.js"></script>
+  <script>
+    VanillaTilt.init(document.querySelectorAll(".card"), {
+    max: 25,
+    speed: 400,
+    glare: true,
+    "max-glare": 1,
+    })
+  </script>
