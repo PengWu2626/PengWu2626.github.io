@@ -113,7 +113,6 @@ title: Reflection Blog Post
   }
 }
 .glasscontainer{
-  position: relative;
   display: inline-flex;
   flex-flow: wrap;
   justify-content: center;
@@ -145,9 +144,8 @@ title: Reflection Blog Post
   opacity: 100%;
 }
 .glasscontainer .card .content h2{
-  position: fixed;
-  top: -110px;
-  right: 20px;
+  position: relative;
+  left: 80px;
   font-size: 4em;
   color: rgba(255, 255, 255, 1.9);
   pointer-events: none;
@@ -155,12 +153,17 @@ title: Reflection Blog Post
 .glasscontainer .card .content p{
   text-align: center;
   font-size: 0.9em;
-  color: black;
+  color: white;
   font-weight: 400;
   opacity: 100%;
 }
 .glasscontainer .card .content li{
+  color:white;
   text-align: left;
+}
+.myglasstable{
+  background: radial-gradient(#1b2735 0%, #090a0f 100%);
+  border-radius: 20px;
 }
 </style>
 
@@ -191,17 +194,26 @@ Our group (**Peng** (myself), **Jiamu**, **Weixin**, and **Miao**) made the web 
 - Here is the [Heroku link](https://pic16b-dogfr-short.herokuapp.com) for the short version of our webapp, which removed face detecting and the drop zone. (Long Boot Time) -->
 
 <table class="myglasstable">
-<tbody>
   <tr>
     <td>
       <div class="glasscontainer">
       <div class="card">
       <div class="content">
       <h2 style="color:rgb(228, 228, 240); font-size: 20px; top: -50px;">GitHub</h2>
-      <i class="fa fa-github fa-5x fa-spin"></i>
+      <i class="fa fa-github fa-5x fa-spin" style="color:lightpink"></i>
       <br>
       <br>
       <p>Here is the <a href ='https://github.com/PengWu2626/PIC16B_GroupProject'>link</a> to the GitHub repository containing the code of this project.</p>
+      </div>
+      </div>
+      </div>
+    </td>
+    <td>
+      <div class="glasscontainer">
+      <div class="card">
+      <div class="content">
+      <h2 style="color:rgb(228, 228, 240); font-size: 20px; top: -50px;">I am Moose</h2>
+      <img src="/images/moose.JPG" height="250" width="300" alt="Moose Image">
       </div>
       </div>
       </div>
@@ -215,7 +227,7 @@ Our group (**Peng** (myself), **Jiamu**, **Weixin**, and **Miao**) made the web 
       <h2 style="color:rgb(228, 228, 240); font-size: 20px; top: -50px;">AWS Link</h2>
       <p>
       <ul>
-      <li><strong>Recommended:</strong> Here is the <a href ='https://dogfr.nicholastec.com'>link</a> for our webapp running on the AWS platform. Thanks to my group member Jiamu, she developed this. (Much Faster Boot Time)</li>
+      <li><strong>Recommended:</strong><br> Here is the <a href ='https://dogfr.nicholastec.com'>link</a> for our webapp running on the AWS platform. Thanks to my group member Jiamu, she developed this. (Faster Boot Time)</li>
       </ul>
       </p>
       </div>
@@ -238,7 +250,6 @@ Our group (**Peng** (myself), **Jiamu**, **Weixin**, and **Miao**) made the web 
       </div>
     </td>
   </tr>
-</tbody>
 </table>
 
 ## Overall, what did you achieve in your project? 
