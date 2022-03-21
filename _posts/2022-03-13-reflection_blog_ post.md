@@ -214,19 +214,20 @@ title: Reflection Blog Post
   left: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(#03a9f4, #e91ee3);
   z-index: 1;
   transition: 0.5s;
   opacity: 90%;
+  background: linear-gradient(#03a9f4, #e91ee3);
 }
 .testimonial .introcard:hover .layer {
   top: 0;
+  opacity: 90%;
 }
-.testimonial .introcard .content {
+.testimonial .introcard .introcontent {
   position: relative;
   z-index: 2;
 }
-.testimonial .introcard .content p {
+.testimonial .introcard .introcontent p {
   display: flex;
   margin: 15px;
   height: 150px;
@@ -237,7 +238,7 @@ title: Reflection Blog Post
   text-align: left;
   color: white;
 }
-.testimonial .introcard .content .image {
+.testimonial .introcard .introcontent .image {
   width: 250px;
   height: 250px;
   margin: 0 auto;
@@ -246,11 +247,11 @@ title: Reflection Blog Post
   border: 4px solid #fff;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-.testimonial .introcard .content .details h2 {
+.testimonial .introcard .introcontent .details h2 {
   color: white;
   font-size: 18px;
 }
-.testimonial .introcard .content .details span {
+.testimonial .introcard .introcontent .details span {
   color: white;
   font-size: 14px;
   transition: 0.5s;
@@ -288,16 +289,13 @@ title: Reflection Blog Post
 </div>
 </div>
 
-
-Our group (**Peng** (myself), **Jiamu**, **Weixin**, and **Miao**) made the web app called **Dog Facial Recognition**. Our web app used three machine learning models. First, our web app will detect if the image contains any human face. Then, it will detect the uploaded image is a dog or cat. Finally, the web app will show the top three most likely dog breeds.
-
 ## About Us
 ### (I copied our group members' introduction from Campuswire.)
 <p>I added some random profile pictures for my group members, just for fun. LOL</p>
 <div class="testimonial">
   <div class="introcard">
     <div class="layer"></div>
-    <div class="content">
+    <div class="introcontent">
     <h5 style="color:white;">Campuswire Intro</h5>
       <p>
         Where are you from?<br><br>
@@ -319,7 +317,7 @@ Our group (**Peng** (myself), **Jiamu**, **Weixin**, and **Miao**) made the web 
 
   <div class="introcard">
     <div class="layer"></div>
-    <div class="content">
+    <div class="introcontent">
          <h5 style="color:white;">Campuswire Intro</h5>
       <p>
         Where are you from?<br><br>
@@ -341,7 +339,7 @@ Our group (**Peng** (myself), **Jiamu**, **Weixin**, and **Miao**) made the web 
 
   <div class="introcard">
     <div class="layer"></div>
-    <div class="content">
+    <div class="introcontent">
          <h5 style="color:white;">Campuswire Intro</h5>
       <p>
         Where are you from?<br><br>
@@ -363,7 +361,7 @@ Our group (**Peng** (myself), **Jiamu**, **Weixin**, and **Miao**) made the web 
 
   <div class="introcard">
     <div class="layer"></div>
-    <div class="content">
+    <div class="introcontent">
         <h5 style="color:white;">Campuswire Intro</h5>
       <p>
         Where are you from?<br><br>
@@ -384,6 +382,8 @@ Our group (**Peng** (myself), **Jiamu**, **Weixin**, and **Miao**) made the web 
   </div>
 
 </div>
+
+Our group (**Peng** (myself), **Jiamu**, **Weixin**, and **Miao**) made the web app called **Dog Facial Recognition**. Our web app used three machine learning models. First, our web app will detect if the image contains any human face. Then, it will detect the uploaded image is a dog or cat. Finally, the web app will show the top three most likely dog breeds.
 
 
 
@@ -468,14 +468,6 @@ Extra Features:
 
 - I wrote a [Drag Upload page](https://github.com/PengWu2626/PIC16B_GroupProject/blob/main/templates/drag_upload.html) and all relative codes that contain a [Drop zone](https://flask-dropzone.readthedocs.io/en/latest/index.html) that allows the user to drag an image to upload.
 <img src="/images/reflection_blog_ post_images/Drag_Upload_Page.png" alt="Drag Upload Page Image">  
-
-<div class="container">
-  <div class="card">
-  <div class="content">
- <img src="/images/reflection_blog_ post_images/Drag_Upload_Page.png" alt="Drag Upload Page Image">  
-  </div>
-  </div>
-  </div>
 
 - I wrote a [Click Gallery Upload page](https://github.com/PengWu2626/PIC16B_GroupProject/blob/main/templates/display_uploads.html) and all relative codes to display all user-uploaded images, and users can click on each image to get the predicting result from our models. 
 <img src="/images/reflection_blog_ post_images/Click_Gallery_Upload.png" alt="Click Gallery Upload Image"> 
