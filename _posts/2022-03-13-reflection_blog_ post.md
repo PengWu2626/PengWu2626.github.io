@@ -165,6 +165,112 @@ title: Reflection Blog Post
   background: radial-gradient(#1b2735 0%, #090a0f 100%);
   border-radius: 20px;
 }
+.piccontainer{
+  display: inline-flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+.piccontainer .piccard{
+  position: relative;
+  width: 100;
+  height: 100;
+  margin: 20px;
+  box-shadow: 20px 20px 50px rgb(0, 0, 0, 0.5);
+  border-radius: 5px;
+  background: rgb(255, 255, 255, 0.1);
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+}
+.piccontainer .piccard .content{
+  padding: 10px;
+  transform: translateY(50px);
+  opacity: 85%;
+  transition: 0.5s;
+  text-align: center;
+}
+.testimonial {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 20px;
+}
+.testimonial .introcard {
+  position: relative;
+  margin: 0 auto;
+  width: 350px;
+  background: radial-gradient(#1b2735 0%, #090a0f 100%);
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+.testimonial .introcard .layer {
+  position: absolute;
+  top: calc(100% - 2px);
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(#03a9f4, #e91ee3);
+  z-index: 1;
+  transition: 0.5s;
+  opacity: 90%;
+}
+.testimonial .introcard:hover .layer {
+  top: 0;
+}
+.testimonial .introcard .content {
+  position: relative;
+  z-index: 2;
+}
+.testimonial .introcard .content p {
+  display: flex;
+  margin: 15px;
+  height: 150px;
+  width: 300px;
+  overflow-y: scroll;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: left;
+  color: white;
+}
+.testimonial .introcard .content .image {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.testimonial .introcard .content .details h2 {
+  color: white;
+  font-size: 18px;
+}
+.testimonial .introcard .content .details span {
+  color: white;
+  font-size: 14px;
+  transition: 0.5s;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background:none;
+  border-radius: 100px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background-image: linear-gradient(180deg, pink 0%, lightblue 99%);
+  opacity: 20%;
+}
+
+
+}
+
 </style>
 
 <div id='stars'></div>
@@ -185,6 +291,104 @@ title: Reflection Blog Post
 
 Our group (**Peng** (myself), **Jiamu**, **Weixin**, and **Miao**) made the web app called **Dog Facial Recognition**. Our web app used three machine learning models. First, our web app will detect if the image contains any human face. Then, it will detect the uploaded image is a dog or cat. Finally, the web app will show the top three most likely dog breeds.
 
+## About Us
+### (I copied our group members' introduction from Campuswire.)
+<p>I added some random profile pictures for my group members, just for fun. LOL</p>
+<div class="testimonial">
+  <div class="introcard">
+    <div class="layer"></div>
+    <div class="content">
+    <h5 style="color:white;">Campuswire Intro</h5>
+      <p>
+        Where are you from?<br><br>
+        I moved to Century City six years ago. Before that, I lived in San Francisco for one year and seven years in Vancouver, Canada.<br><br>
+        What is your major, or what are you interested in?<br><br>
+        I am majoring in Applied Mathematics, but I am interested in computer science.<br><br>
+        Why are you interested in advanced Python programming?<br><br>
+        I'm interested in advanced Python programming because I think Python is an essential skill, and I want to explore more powerful tools which I can use in my future career.<br><br>
+        What's a fun fact about you? <br><br>
+        A fun fact about me is that I like to cuddle with my french bulldog.
+      </p>
+      <div class="image"><img src="/images/cartoon.png" alt="cartoon">
+      </div>
+      <div class="details">
+        <h2>Peng</h2> <br> <span>myself</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="introcard">
+    <div class="layer"></div>
+    <div class="content">
+         <h5 style="color:white;">Campuswire Intro</h5>
+      <p>
+        Where are you from?<br><br>
+        I am from Jilin, a northeast province in China. I am a transfer student here. I spent my first two years of college in UC Davis, and I just moved to LA for 4 months.<br><br>
+        What is your major, or what are you interested in?<br><br>
+        My major is financial actuarial math. I am interested in marketing, and the skills I learn in data would be a helpful tool to become a good marketer.<br><br>
+        Why are you interested in advanced Python programming?<br><br>
+        I want to learn more programming and data skills. Even though I won’t be a programmer in the future, the programming skills is widely used in many areas.<br><br>
+        What’s a fun fact about you?<br><br>
+        I love dancing and I have a flexible body to do some amazing movements.
+      </p>
+      <div class="image"><img src="/images/random1.jpg" alt="cartoon">
+      </div>
+      <div class="details">
+        <h2>Jiamu</h2> <br> 
+      </div>
+    </div>
+  </div>
+
+  <div class="introcard">
+    <div class="layer"></div>
+    <div class="content">
+         <h5 style="color:white;">Campuswire Intro</h5>
+      <p>
+        Where are you from?<br><br>
+        I live in Westwood since the last quarter. Before that, I lived in Alhambra. And I still visit back to Alhambra to have Chinese cuisines. If any of you're interested in Chinese cuisines, highly recommend visiting this place.<br><br>
+        What is your major, or what are you interested in?<br><br>
+        My major is Applied Mathematics. After taking math 142, I found mathematical modeling is super cool stuff.<br><br>
+        Why are you interested in advanced Python programming?<br><br>
+        After taking PIC 16A with professor Chodrow, I found out that coding is fun and super practical. So I decide to take this class. Besides, it becomes a demand in most careers.<br><br>
+        What’s a fun fact about you?<br><br>
+        My favorite Spider-Man actor is Tom Holland!!!
+      </p>
+      <div class="image"><img src="/images/random2.jpg" alt="cartoon">
+      </div>
+      <div class="details">
+        <h2>Weixin</h2> <br>
+      </div>
+    </div>
+  </div>
+
+  <div class="introcard">
+    <div class="layer"></div>
+    <div class="content">
+        <h5 style="color:white;">Campuswire Intro</h5>
+      <p>
+        Where are you from?<br><br>
+        I am from China, but I am living in Portland now. I moved from LA to Portland last year. Now I love it more than LA.<br><br>
+        What is your major, or what are you interested in?<br><br>
+        My major is Applied Mathematics. I am interested in solving problems. Now programming is my another big interest.<br><br>
+        Why are you interested in advanced Python programming?<br><br>
+        I am interested in advanced Python programming because I want to be a data scientist. Python is the best tool to work and deal with data.<br><br>
+        What’s a fun fact about you?<br><br>
+        A fun fact about me is that I climbed a 30 feet pole and installed a cross arm on it which is half of my weight.
+      </p>
+      <div class="image"><img src="/images/random3.jpg" alt="cartoon">
+      </div>
+      <div class="details">
+        <h2>Miao</h2> <br>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+## Our Webapp Links
 <!-- - Here is the [link](https://github.com/PengWu2626/PIC16B_GroupProject) to the GitHub repository containing the code of this project.
 
 - Here is the [link](https://dogfr.nicholastec.com) for our webapp running on the AWS platform. Thanks to my group member Jiamu, she developed this. (**Recommended** with Much Faster Boot Time)
@@ -264,6 +468,14 @@ Extra Features:
 
 - I wrote a [Drag Upload page](https://github.com/PengWu2626/PIC16B_GroupProject/blob/main/templates/drag_upload.html) and all relative codes that contain a [Drop zone](https://flask-dropzone.readthedocs.io/en/latest/index.html) that allows the user to drag an image to upload.
 <img src="/images/reflection_blog_ post_images/Drag_Upload_Page.png" alt="Drag Upload Page Image">  
+
+<div class="container">
+  <div class="card">
+  <div class="content">
+ <img src="/images/reflection_blog_ post_images/Drag_Upload_Page.png" alt="Drag Upload Page Image">  
+  </div>
+  </div>
+  </div>
 
 - I wrote a [Click Gallery Upload page](https://github.com/PengWu2626/PIC16B_GroupProject/blob/main/templates/display_uploads.html) and all relative codes to display all user-uploaded images, and users can click on each image to get the predicting result from our models. 
 <img src="/images/reflection_blog_ post_images/Click_Gallery_Upload.png" alt="Click Gallery Upload Image"> 
